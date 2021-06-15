@@ -34,7 +34,8 @@ steps:
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
     patterns: |
-      **/*.zip
+      **/ALMAcceleratorSampleSolution*.zip
+      !**/ALMAcceleratorSampleSolution*managed.zip
   displayName: 'Download ALMAcceleratorSampleSolution solutions'
 
 - template: Pipelines\Templates\create-release-github.yml@PipelineRepo
