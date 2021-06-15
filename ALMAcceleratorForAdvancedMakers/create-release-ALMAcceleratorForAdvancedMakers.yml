@@ -34,7 +34,7 @@ steps:
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
     patterns: |
-      !**/ALMAcceleratorSampleSolution*managed.zip
+      !**/ALMAcceleratorSampleSolution_1.0.20210520.19_managed.zip
       **/ALMAcceleratorSampleSolution*.zip
   displayName: 'Download ALMAcceleratorSampleSolution solutions'
 
