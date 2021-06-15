@@ -34,7 +34,7 @@ steps:
     runVersion: 'latest'
     patterns: |
         '**/ALMAcceleratorSampleSolution*.zip'
-        '**/ALMAcceleratorSampleSolution*managed.zip'
+        '!**/ALMAcceleratorSampleSolution*managed.zip'
 
 - template: Pipelines\Templates\create-release-github.yml@PipelineRepo
   parameters:
