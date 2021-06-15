@@ -32,8 +32,7 @@ steps:
     project: 'coe-starter-kit-github'
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
-    patterns: |
-        '**/*.zip'
+    patterns: '**/*.zip'
 
 - template: Pipelines\Templates\create-release-github.yml@PipelineRepo
   parameters:
