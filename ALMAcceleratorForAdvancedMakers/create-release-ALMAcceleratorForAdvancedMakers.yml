@@ -32,11 +32,11 @@ steps:
     project: 'coe-starter-kit-github'
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
-    patterns: 'ALMAcceleratorSampleSolution*.zip'
+    patterns: '*ALMAcceleratorSampleSolution*.zip'
 
 - template: Pipelines\Templates\create-release-github.yml@PipelineRepo
   parameters:
     solutionName: 'ALMAcceleratorForAdvancedMakers'
     solutionDisplayName: 'ALM Accelerator For Advanced Makers'
     connectionName: 'coe-starter-kit'
-    releaseNotesPath: 'ALMAcceleratorForAdvancedMakers/RELEASENOTES.md'
+    releaseNotesPath: '*ALMAcceleratorForAdvancedMakers/RELEASENOTES.md'
