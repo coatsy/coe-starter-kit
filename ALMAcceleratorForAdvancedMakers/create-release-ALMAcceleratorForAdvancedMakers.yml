@@ -31,7 +31,7 @@ steps:
     project: 'coe-starter-kit-github'
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
-- template: Pipelines\Templates\create-release-github@PipelineRepo
+- template: Pipelines\Templates\create-release-github.yml@PipelineRepo
   parameters:
     solutionName: 'ALMAcceleratorForAdvancedMakers'
     solutionDisplayName: 'ALM Accelerator For Advanced Makers'
