@@ -24,6 +24,7 @@ steps:
     pipeline: '245' #ALMAcceleratorForAdvancedMakers buildId
     runVersion: 'latest'
     patterns: '**/*managed.zip'
+  displayName: 'Download ALMAcceleratorForAdvancedMakers solution'
 
 # Download the artifacts from the latest deployment of the ALMAcceleratorSampleSolution to production.
 - task: DownloadPipelineArtifact@2
@@ -32,7 +33,9 @@ steps:
     project: 'coe-starter-kit-github'
     pipeline: '125' #ALMAcceleratorSampleSolution buildId
     runVersion: 'latest'
-    patterns: '**/*.zip'
+    patterns: |
+      '**/*.zip'
+  displayName: 'Download ALMAcceleratorSampleSolution solutions'
 
 - template: Pipelines\Templates\create-release-github.yml@PipelineRepo
   parameters:
