@@ -33,7 +33,7 @@ The GETTINGSTARTED.md is structured into 7 main sections
     - [Create an App Registration in your AAD Environment](#create-an-app-registration-in-your-aad-environment)
     - [Give Power App Management Permission to your App](#give-power-app-management-permission-to-your-app)
     - [Install Azure DevOps Extensions.](#install-azure-devops-extensions)
-    - [Clone the YAML Pipelines from GitHub to your Azure DevOps instance](#clone-the-YAML-pipelines-from-github-to-your-azure-devops-instance)
+    - [Clone the YAML Pipelines from GitHub to your Azure DevOps instance](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance)
     - [Create Pipelines for Import, Delete and Export of Solutions](#create-pipelines-for-import-delete-and-export-of-solutions)
     - [Get the Pipeline ID for the Export Solution Pipeline to use for global variables](#get-the-pipeline-id-for-the-export-solution-pipeline-to-use-for-global-variables)
     - [Create Pipeline global variables](#create-pipeline-global-variables)
@@ -836,4 +836,6 @@ See the [User Guide](USERGUIDE.md) for using the ALM Accelerator App
 
    Alternatively, to disable this notification for all pipelines you can turn off Limit Job authorization scope to referenced Azure DevOps repositories in Project -> Settings -> General. This setting is turned on by default when you create a new project.
 
-   ![image-20210426143538533](.attachments/GETTINGSTARTED/image-20210426143538533.png) 
+   ![image-20210426143538533](.attachments/GETTINGSTARTED/image-20210426143538533.png)
+
+   Note that the project settings can be overridden at the Azure DevOps organization level, so if the option to change this is disabled in project settings, check in Organization Settings.
